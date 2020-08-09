@@ -49,7 +49,7 @@ public class NQueens {
     }
 
     public static void main(String[] args) {
-        NQueens nQueens = new NQueens();
+        NQueensWithDFS nQueens = new NQueensWithDFS();
         List<List<String>> res =  nQueens.solveNQueens(4);
         System.out.println(res);
 

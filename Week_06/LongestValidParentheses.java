@@ -3,6 +3,7 @@ import java.util.Deque;
 
 /**
  * Created by yuping on 2020/7/31.
+ * 最长有效字符串
  */
 public class LongestValidParentheses {
 
