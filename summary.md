@@ -15,6 +15,31 @@
  2. 快慢指针 判断循环链表
  3. 三数之和 四数之和
  
+ 双指针典型题目 求矩形最大面积 时间复杂度O(n)
+ ```
+  public int maxArea(int[] height) {
+
+        int left = 0;
+        int right = height.length-1;
+        int ans = 0;
+        while(left < right) {
+
+            int minHeight = 0;
+            if(height[left] < height[right]) {
+                 minHeight = height[left];
+                 left++;
+            }else {
+                 minHeight = height[right];
+                 right--;
+            }
+            ans = Math.max(ans, minHeight * (right - left + 1));
+        }
+        return ans;
+
+    }
+ 
+ ```
+ 
  ### 队列和栈
  1. 实现方式 数组和链表都可以实现
  2. 栈特性 先入后出 
